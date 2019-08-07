@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="Independent web engineer specializing in building Ruby on Rails backend applications, REST APIs and JavaScript user interfaces. I can use my skills and expertise to build for you RoR applications or REST APIs with authentication and authorization systems (using Devise, Pundit or Cancancan), with database support(PostgreSQL, MySQL, Redis) and background process step(via Sidekiq or Delayed Job) covered by automated tests (RSpec, Capybara, Minitest).">
+    <meta name="keywords" content="Ruby on Rails consultant, Ruby consultant, Rails consultant, JavaScript, Web developer, Angular, React, Redux, Ruby contractor, Elixir, Phoenix framework, Web engineer">
+    <link rel="shortcut icon" type="image/x-icon" href="https://slavakisel.github.iofavicon.ico">
+    <title>Slava Kysil Consulting</title>
+    <meta name="generator" content="Hugo 0.55.6" />
+    <link rel="stylesheet" type="text/css" href="https://slavakisel.github.iocss/bundle.css" />
+
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <noscript>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    </noscript>
+
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+    
+
+    <style>
+       
+      @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+       
+      @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+       
+      @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+       
+      @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LchYK0UAAAAAMRflt6o0V_1imaH5KDnH5XVjWjB&onload=initRecaptcha&render=explicit"></script>
+    <script type="text/javascript">
+      var initRecaptcha = function() {
+        grecaptcha.ready(function() {
+          grecaptcha.execute("6LchYK0UAAAAAMRflt6o0V_1imaH5KDnH5XVjWjB", {action: "homepage"}).then(function(token) {
+            document.getElementById('recaptcha_token').value = token;
+          });
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+  	
+
+  	<script>document.body.className = "js-yes";</script>
+
+  	<div class="page">
+  		<aside id="js-sidebar" class="sidebar">
+  			<div class="avatar" id="avatar">
+          
+        </div>
+  			<div class="welcome">
+  				<h1 class="welcome__msg">
+  					Viacheslav Kysil
+  					<span class="welcome__label">Ruby on Rails consultant</span>
+            <div>
+              <a class="welcome__icon fas fa-envelope-square" rel="noreferrer" target="_blank" href="mailto:&#115;&#108;&#097;&#118;&#097;&#064;&#115;&#107;&#100;&#101;&#118;&#046;&#105;&#110;&#102;&#111;">
+                <span class="social__name">&#115;&#108;&#097;&#118;&#097;&#064;&#115;&#107;&#100;&#101;&#118;&#046;&#105;&#110;&#102;&#111;</span>
+              </a>
+              <a href="https://github.com/slavakisel" target="_blank" rel="noreferrer" class="welcome__icon fab fa-github"><span class="social__name">GitHub</span></a>
+              <a href="https://t.me/primazp" target="_blank" rel="noreferrer" class="welcome__icon fab fa-telegram"><span class="social__name">Telegram</span></a>
+              <a href="https://www.linkedin.com/in/kiselv/" target="_blank" rel="noreferrer" class="welcome__icon fab fa-linkedin"><span class="social__name">LinkedIn</span></a>
+              <a href="https://medium.com/@primazp" target="_blank" rel="noreferrer" class="welcome__icon fab fa-medium-m"><span class="social__name">Blog</span></a>
+              <a href="https://stackoverflow.com/users/7362128/slava-k" target="_blank" rel="noreferrer" class="welcome__icon fab fa-stack-overflow">
+                <span class="social__name">StackOverflow</span>
+              </a>
+            </div>
+  				</h1>
+  			</div>
+  		</aside>
+  		<div class="container">
+  			<header class="header">
+  <nav id="js-nav" class="nav">
+    <a href="#about" class="nav__link js-nav__about js-nav__link">
+      <i class="icon fas fa-user-circle"></i>
+      <span class="nav__label">About me</span>
+    </a>
+    <a href="#resume" class="nav__link js-nav__link">
+      <i class="icon fas fa-file-alt"></i>
+      <span class="nav__label">CV</span>
+    </a>
+    <a href="#contacts" class="nav__link js-nav__link">
+      <i class="icon fas fa-mobile-alt"></i>
+      <span class="nav__label">Contacts</span>
+    </a>
+    <a href="#portfolio" class="nav__link js-nav__link">
+      <i class="icon fas fa-laptop"></i>
+      <span class="nav__label">Portfolio</span>
+    </a>
+    <a href="#services" class="nav__link js-nav__link">
+      <i class="icon fas fa-wrench"></i>
+      <span class="nav__label">Services</span>
+    </a>
+    <a href="#recommendations" class="nav__link js-nav__link">
+      <i class="icon fas fa-comments"></i>
+      <span class="nav__label">Reviews</span>
+    </a>
+    <a href="https://medium.com/@primazp" target="_blank" rel="noreferrer" class="nav__link">
+      <i class="icon fab fa-medium-m"></i>
+      <span class="nav__label">Blog</span>
+    </a>
+  </nav>
+</header>
+
+  			<div class="content">
+          <div id="js-tabs-infoblocks" class="tabs-infoblocks">
+            <section data-nav="about" class="tabs-infoblock tabs-about js-about">
+	<div class="tabs-infoblock__inner">
+    <h2 class="title main-title"><span class="main-title__label">Viacheslav Kysil</span></h2>
+		<div class="content__section">
+			<h3 class="title title_middle">
+				<i class="icon icon_small main-icon fas fa-bookmark"></i>
+				<span class="title__label">Ruby on Rails and JavaScript consultant</span>
+        <div class="title__sublabel">I help digital entrepreneurs to turn their ideas into robust, performant and secure web applications</div>
+			</h3>
+			<blockquote class="blockquote">
+				<i class="icon blockquote__quote blockquote__quote-left fas fa-quote-left"></i>
+				<p>
+				  Hello, I am an experienced engineer specializing in building web applications, APIs and JavaScript user interfaces.
+          I have experience with all stages of the development cycle - from writing code to deployment and managing application in production.
+        </p>
+        <p>
+          I can use my skills and expertise to build for you a web application of any size, secured with authentication and authorization systems, database support and background processes for performance optimization.
+          I always cover my code with automated tests so there will be no vendor lock up - if you ever want to switch to another software developer or team, the will able to apply modifications with confidence.
+        </p>
+        <p>
+          What you'll get for your money:
+          <ul class="content__blockquote-list">
+            <li>Security. I won't disappear from you in the middle of a job.</li>
+            <li>Reliability. Once we agree on a task, you will get it exactly the way we've discussed it.</li>
+            <li>Consistency. You'll get the same level of high-quality work from start to finish.</li>
+            <li>Initiative. I'll contribute ideas, help to define your requirements and ask questions along the way.</li>
+          </ul>
+        </p>
+        <p>
+          Feel free to reach out to me anytime. I am looking forward to building your awesome web project together!
+				</p>
+				<i class="icon blockquote__quote blockquote__quote-right fas fa-quote-right"></i>
+			</blockquote>
+		</div>
+		<div class="content__section">
+			<h3 class="title title_middle">
+				<i class="icon icon_small main-icon fas fa-file-alt"></i>
+				<span class="title__label">Personal Info</span>
+			</h3>
+			<div class="iconboxs">
+				<div class="iconbox">
+					<i class="icon icon_middle iconbox__icon fas fa-globe"></i>
+					<div class="iconbox__info">
+						<span class="iconbox__label iconbox__name">Languages</span>
+						<span class="iconbox__label">English, Russian</span>
+					</div>
+				</div>
+				<div class="iconbox">
+					<i class="icon icon_middle iconbox__icon far fa-calendar"></i>
+					<div class="iconbox__info">
+						<span class="iconbox__label iconbox__name">Date of birth</span>
+						<span class="iconbox__label">02 February 1990</span>
+					</div>
+				</div>
+				<div class="iconbox">
+					<i class="icon icon_middle iconbox__icon fas fa-map-marker"></i>
+					<div class="iconbox__info">
+						<span class="iconbox__label iconbox__name">Location</span>
+						<span class="iconbox__label">
+              Tallinn, Estonia, EU
+            </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content__section">
+			<div class="skills">
+				<h3 class="title title_middle">
+					<i class="icon icon_small main-icon fas fa-certificate"></i>
+					<span class="title__label">Main areas of expertise</span>
+				</h3>
+        <div class="skills_wrapper">
+          <ul class="skills_column">
+            <li class="skill">Ruby</li>
+            <li class="skill">Ruby on Rails</li>
+            <li class="skill">Sidekiq</li>
+            <li class="skill">Active Job</li>
+            <li class="skill">RSpec</li>
+            <li class="skill">Capybara</li>
+          </ul>
+          <ul class="skills_column">
+            <li class="skill">JavaScript</li>
+            <li class="skill">ReactJS</li>
+            <li class="skill">Webpack</li>
+            <li class="skill">TypeScript</li>
+            <li class="skill">FlowType</li>
+            <li class="skill">SASS</li>
+          </ul>
+          <ul class="skills_column">
+            <li class="skill">Caching in Rails</li>
+            <li class="skill">PostgreSQL</li>
+            <li class="skill">Redis</li>
+            <li class="skill">Git</li>
+            <li class="skill">Nginx</li>
+            <li class="skill">Deployment</li>
+          </ul>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+            <section data-nav="resume" class="tabs-infoblock resume">
+	<div class="tabs-infoblock__inner">
+		<h2 class="title main-title"><span class="main-title__label">Resume</span></h2>
+		<div class="content__section">
+			
+			<a href="https://slavakisel.github.ioViacheslav_Kysil_CV.pdf" download="Viacheslav_Kysil_CV.pdf" class="link-flat download-resume">
+				<i class="icon link__icon fas fa-cloud-download-alt"></i>
+				<span class="download-resume__label">Download PDF</span>
+			</a>
+		</div>
+		<div class="content__section">
+			<h3 class="title title_middle">
+				<i class="icon icon_small main-icon fas fa-suitcase"></i>
+				<span class="title__label">Work experience</span>
+			</h3>
+			<div class="timeline">
+				<article class="timeline__box">
+					<h4 class="title title_small">Independent Ruby on Rails and JavaScript consultant</h4>
+					<span class="timeline__caption">June 2017 - present</span>
+					<div class="timeline__content">
+						<p>
+							Nowadays I work as Lead developer and consultant on enterprise projects built with Ruby on Rails and React.js.
+						</p>
+					</div>
+				</article>
+				<article class="timeline__box">
+					<h4 class="title title_small">Senior Web developer</h4>
+					<span class="timeline__caption"><a href="https://www.flatstack.com/" target="_blank" rel="noreferrer">April 2016 -  June 2017 (Flatstack, Kazan, Russia)</a></span>
+					<div class="timeline__content">
+						<p>
+							I was working as a Lead developer on various projects built with Ruby on Rails.
+              At Flatstack I was responsible for backend development (high-load, scalability), client-side development with React.js, SQL queries analysis and optimization (for PostgreSQL), sprints planning, mentoring junior and middle employees.
+              I also got familiar with RADIUS authentication and captive portal development.
+						</p>
+					</div>
+				</article>
+				<article class="timeline__box">
+					<h4 class="title title_small">Ruby on Rails and JavaScript developer</h4>
+					<span class="timeline__caption">February 2015 - March 2016 (Racoons Group, Kazan, Russia)</span>
+					<div class="timeline__content">
+						<p>
+							I transitioned fast from member to lead developer of a team responsible for one of the largest company projects: <a href="https://interneturok.ru/school" target="_blank" rel="noreferrer">interneturok.ru</a>.
+              Solution stack was as follows: Ruby on Rails, Angular, MySQL. My responsibilities included client and server-side development, code review and deployment.
+            </p>
+            <p>
+              While I worked at Racoons Group I mastered my skills as Ruby and JavaScript developer and with SQL queries;
+              got experience with CoffeeScript, Angular and backend API development;
+              got experience with implementing real time data update systems (using Websockets).
+              Also, in cooperation with other developers, I increased both application client-side and server-side scalability and speed.
+						</p>
+					</div>
+				</article>
+				<article class="timeline__box">
+					<h3 class="title title_small">Web developer</h3>
+					<span class="timeline__caption">August 2014 - February 2015 (Freelance)</span>
+					<div class="timeline__content">
+						<p>
+							Developed front end and back end of JavaPractice online service: java programming problems archive with automatic solution verification system.
+              Technologies used: AngularJS, CoffeeScript, Spring Framework, MySQL, and JUnit with Jasmine for testing.
+              During this period I got experience with building client-side applications in Angular;
+              VPS administration and setup experience (Nginx, Tomcat, Java application deployment);
+              experience with building backend APIs using Spring framework
+						</p>
+					</div>
+				</article>
+			</div>
+		</div>
+
+		<div class="content__section">
+			<h3 class="title title_middle">
+				<i class="icon icon_small main-icon fas fa-graduation-cap"></i>
+				<span class="title__label">Education</span>
+			</h3>
+			<div class="timeline">
+				<article class="timeline__box">
+					<h4 class="title title_small">ZNTU</h4>
+					<span class="timeline__caption">2007-2012</span>
+					<div class="timeline__content">
+						<p>Bachelor of Engineering</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+            <section data-nav="portfolio" class="tabs-infoblock">
+	<div class="tabs-infoblock__inner">
+		<h2 class="title main-title"><span class="main-title__label">Portfolio</span></h2>
+		
+		<div class="content__section">
+			<div class="cards">
+        
+          <article class="card" id="rhino">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/rhino.png"
+                  data-lightbox="/images/portfolio/rhino.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/rhino.jpg"
+                    alt="Rhino">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/rhino.jpg" class="responsive-img card__img jslghtbx-thmb" alt="Rhino">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Rhino</h4>
+              
+                <div class="year">May 2017 - ...</div>
+              
+  						<div class="card__description">
+  							<p>
+  								Rhino is a real estate technology company replacing security deposits with a smarter alternative that’s better
+for both renters and landlords. Renters pay a small monthly fee instead of a large security deposit while
+landlords receive more security. Rhino is targeting the $35&#43; billion national market for security deposits,
+with an initial focus on the $4&#43; billion New York City market. I am working as a Lead engineer developing
+Ruby on Rails backend and React and TypeScript/Flow client side.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">PostgreSQL</span>
+                
+                  <span class="tags__item tags__hashtag">REST API</span>
+                
+                  <span class="tags__item tags__hashtag">React</span>
+                
+                  <span class="tags__item tags__hashtag">TypeScript</span>
+                
+                  <span class="tags__item tags__hashtag">Flow</span>
+                
+                  <span class="tags__item tags__hashtag">Webpack</span>
+                
+                  <span class="tags__item tags__hashtag">Sidekiq</span>
+                
+                  <span class="tags__item tags__hashtag">RSpec</span>
+                
+                  <span class="tags__item tags__hashtag">Capybara</span>
+                
+                  <span class="tags__item tags__hashtag">CanCanCan</span>
+                
+  						</div>
+
+              
+                <a href="https://www.sayrhino.com" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="mma">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/mastermind.png"
+                  data-lightbox="/images/portfolio/mastermind.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/mastermind.jpg"
+                    alt="Mastermind Manager">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/mastermind.jpg" class="responsive-img card__img jslghtbx-thmb" alt="Mastermind Manager">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Mastermind Manager</h4>
+              
+                <div class="year">June 2017 - ...</div>
+              
+  						<div class="card__description">
+  							<p>
+  								Mastermind Manager is set of essential tools for mastermind group session management, brainstorming,
+goal setting and accountability. I am a lead engineer of application focused on full product development with
+Ruby on Rails 5 and React/Redux. Project is currently in public Beta.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">PostgreSQL</span>
+                
+                  <span class="tags__item tags__hashtag">REST API</span>
+                
+                  <span class="tags__item tags__hashtag">React</span>
+                
+                  <span class="tags__item tags__hashtag">Redux</span>
+                
+                  <span class="tags__item tags__hashtag">Webpack</span>
+                
+                  <span class="tags__item tags__hashtag">Sidekiq</span>
+                
+                  <span class="tags__item tags__hashtag">RSpec</span>
+                
+                  <span class="tags__item tags__hashtag">Capybara</span>
+                
+                  <span class="tags__item tags__hashtag">Pundit</span>
+                
+  						</div>
+
+              
+                <a href="https://mastermindbetter.com" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="workon">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/workon.png"
+                  data-lightbox="/images/portfolio/workon.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/workon.jpg"
+                    alt="Workon">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/workon.jpg" class="responsive-img card__img jslghtbx-thmb" alt="Workon">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Workon</h4>
+              
+                <div class="year">March - May 2017</div>
+              
+  						<div class="card__description">
+  							<p>
+  								A canadian job board. I have been a lead developer on this project for a few months.
+I was responsible for architecturing and implementing RESTful API endpoints using JSON API specification,
+code review, maintenance, tasks estimation and sprint planning.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">PostgreSQL</span>
+                
+                  <span class="tags__item tags__hashtag">REST API</span>
+                
+                  <span class="tags__item tags__hashtag">RSpec</span>
+                
+                  <span class="tags__item tags__hashtag">React</span>
+                
+                  <span class="tags__item tags__hashtag">Redux</span>
+                
+                  <span class="tags__item tags__hashtag">Capybara</span>
+                
+                  <span class="tags__item tags__hashtag">Sidekiq</span>
+                
+                  <span class="tags__item tags__hashtag">Pundit</span>
+                
+  						</div>
+
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="acl">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/acl.png"
+                  data-lightbox="/images/portfolio/acl.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/acl.jpg"
+                    alt="ACL">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/acl.jpg" class="responsive-img card__img jslghtbx-thmb" alt="ACL">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">ACL</h4>
+              
+                <div class="year">August 2016 - March 2017</div>
+              
+  						<div class="card__description">
+  							<p>
+  								ACL™ GRC— a flexible and easy way to manage the process of planning and organizing projects, assessing risk,
+analyzing data, communicating issues, and visually sharing your findings. I&#39;ve been one of senior full stack
+developers in distributed R&amp;D team for 7 months. Was responsible for task planning, estimation and
+backend/frontend development. While I was working on the project together with the team we successfully
+delivered 3 major epic stories and also won an internal hackathon by developing bulk upload feature based on
+react-data-grid.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">PostgreSQL</span>
+                
+                  <span class="tags__item tags__hashtag">REST API</span>
+                
+                  <span class="tags__item tags__hashtag">RSpec</span>
+                
+                  <span class="tags__item tags__hashtag">Capybara</span>
+                
+                  <span class="tags__item tags__hashtag">React</span>
+                
+                  <span class="tags__item tags__hashtag">Redux</span>
+                
+                  <span class="tags__item tags__hashtag">Delayed Job</span>
+                
+                  <span class="tags__item tags__hashtag">CanCanCan</span>
+                
+  						</div>
+
+              
+                <a href="https://www.acl.com/products/acl-grc/" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="parking">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/parking.png"
+                  data-lightbox="/images/portfolio/parking.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/parking.jpg"
+                    alt="Premium Parking">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/parking.jpg" class="responsive-img card__img jslghtbx-thmb" alt="Premium Parking">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Premium Parking</h4>
+              
+                <div class="year">June - July 2016</div>
+              
+  						<div class="card__description">
+  							<p>
+  								I have been working on this project for a few months with a team of fellow developers.
+My responsibilities included server side development and maintenance, code review, deployment, tasks
+estimation and sprint planning.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">PostgreSQL</span>
+                
+                  <span class="tags__item tags__hashtag">Redis</span>
+                
+                  <span class="tags__item tags__hashtag">MemCachier</span>
+                
+                  <span class="tags__item tags__hashtag">Delayed Job</span>
+                
+                  <span class="tags__item tags__hashtag">REST API</span>
+                
+                  <span class="tags__item tags__hashtag">Rspec</span>
+                
+  						</div>
+
+              
+                <a href="https://www.premiumparking.com/" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="captive-portal">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/captive_and_admin-2.png"
+                  data-lightbox="/images/portfolio/captive_and_admin-2.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/captive_and_admin-2.jpg"
+                    alt="Captive portal with admin dashboard">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/captive_and_admin-2.jpg" class="responsive-img card__img jslghtbx-thmb" alt="Captive portal with admin dashboard">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Captive portal with admin dashboard</h4>
+              
+                <div class="year">April - July 2016</div>
+              
+  						<div class="card__description">
+  							<p>
+  								This is a custom captive portal implementation for an enterprise wifi network.
+I&#39;ve been working on a server side of this project for a few months and implemented radius client tool,
+various background jobs via ActiveJob and Sidekiq, mailers, JSON API, etc.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">PostgreSQL</span>
+                
+                  <span class="tags__item tags__hashtag">Sidekiq</span>
+                
+                  <span class="tags__item tags__hashtag">Microsoft Azure</span>
+                
+                  <span class="tags__item tags__hashtag">REST API</span>
+                
+                  <span class="tags__item tags__hashtag">RSpec</span>
+                
+                  <span class="tags__item tags__hashtag">jQuery</span>
+                
+  						</div>
+
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="online-school">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/interneturok_new.png"
+                  data-lightbox="/images/portfolio/interneturok_new.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/interneturok_new.jpg"
+                    alt="Interneturok HomeSchool">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/interneturok_new.jpg" class="responsive-img card__img jslghtbx-thmb" alt="Interneturok HomeSchool">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Interneturok HomeSchool</h4>
+              
+                <div class="year">February 2015 - March 2016</div>
+              
+  						<div class="card__description">
+  							<p>
+  								This is distance school education project.
+I worked on it for more than a year and transitioned from a regular to lead developer.
+The goal was to maintain existing features and add new ones.
+My everyday duties included Ruby on Rails API and AngularJS app development, code review and deployment.
+In a cooperation with 3 other developers, I&#39;ve been able to design and develop a new internal chat system,
+online exam feature, pupil and teacher journals. Also, response time among critical project pages was
+significantly improved and deployment process was optimized to decrease deployment time from 11 minutes
+to less than one.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">MySQL</span>
+                
+                  <span class="tags__item tags__hashtag">Sidekiq</span>
+                
+                  <span class="tags__item tags__hashtag">Grape</span>
+                
+                  <span class="tags__item tags__hashtag">REST API</span>
+                
+                  <span class="tags__item tags__hashtag">RSpec</span>
+                
+                  <span class="tags__item tags__hashtag">AngularJS</span>
+                
+                  <span class="tags__item tags__hashtag">CoffeeScript</span>
+                
+                  <span class="tags__item tags__hashtag">Grunt</span>
+                
+                  <span class="tags__item tags__hashtag">Jasmine</span>
+                
+  						</div>
+
+              
+                <a href="https://interneturok.ru/school_landing/" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="radius-gem">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/radius_client.png"
+                  data-lightbox="/images/portfolio/radius_client.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/radius_client.jpg"
+                    alt="RadiusClient gem">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/radius_client.jpg" class="responsive-img card__img jslghtbx-thmb" alt="RadiusClient gem">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">RadiusClient gem</h4>
+              
+                <div class="year">May - June 2016</div>
+              
+  						<div class="card__description">
+  							<p>
+  								Ruby Library for interacting with freeradius server. While working at Flatstack I was developing a
+captive portal for one of our clients and it required a library to establish interaction between Ruby on Rails
+server and RADIUS server. I took an old and outdated library and developed it further to support current
+stable version of freeradius server. This project helped me to get experience with RADIUS authentication
+and captive portal development.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby</span>
+                
+                  <span class="tags__item tags__hashtag">Gem building</span>
+                
+                  <span class="tags__item tags__hashtag">FreeRadius</span>
+                
+  						</div>
+
+              
+                <a href="https://github.com/fs/radius_client" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="javapractice">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/javapractice.png"
+                  data-lightbox="/images/portfolio/javapractice.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/javapractice.jpg"
+                    alt="JavaPractice Service">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/javapractice.jpg" class="responsive-img card__img jslghtbx-thmb" alt="JavaPractice Service">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">JavaPractice Service</h4>
+              
+                <div class="year">October 2014 - March 2015</div>
+              
+  						<div class="card__description">
+  							<p>
+  								This project is Java programming problems archive with automatic solution verification system.
+Client&#39;s goal was to develop such service as an addition to his other project focused on java programming
+education. My contribution to this project was a whole client side application built with AngularJS,
+written in CoffeeScript and completely covered by Jasmine specs. I also designed and developed some
+backend API endpoints and services. As a result of my work problem-solving part of this service was
+fully completed.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">AngularJS</span>
+                
+                  <span class="tags__item tags__hashtag">CoffeeScript</span>
+                
+                  <span class="tags__item tags__hashtag">Grunt</span>
+                
+                  <span class="tags__item tags__hashtag">Jasmine</span>
+                
+                  <span class="tags__item tags__hashtag">Java 7</span>
+                
+                  <span class="tags__item tags__hashtag">Spring Framework</span>
+                
+                  <span class="tags__item tags__hashtag">Tomcat</span>
+                
+                  <span class="tags__item tags__hashtag">jUnit</span>
+                
+  						</div>
+
+              
+                <a href="https://javapractice.ru" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="oss">
+  					<header class="card__header">
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Open Source contributions</h4>
+              
+  						<div class="card__description">
+  							<p>
+  								Contributed to various Ruby, JavaScript and Elixir libraries like Timex, Jitsi Meet (from Atlassian),
+React Currency Input, etc. Developed own open source projects: React Month Picker and React Popover Component.
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby</span>
+                
+                  <span class="tags__item tags__hashtag">JavaScript</span>
+                
+                  <span class="tags__item tags__hashtag">Elixir</span>
+                
+  						</div>
+
+              
+                <a href="https://github.com/slavakisel?utf8=%E2%9C%93&amp;tab=repositories&amp;q=&amp;type=fork" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+          <article class="card" id="battleship">
+  					<header class="card__header">
+              
+                <a href="/images/portfolio/battleship.png"
+                  data-lightbox="/images/portfolio/battleship.png">
+                  <img class="responsive-img card__img jslghtbx-thmb"
+                    data-lazyload="/images/portfolio/thumb/battleship.jpg"
+                    alt="Battleship">
+
+                  <noscript>
+                    <img src="/images/portfolio/thumb/battleship.jpg" class="responsive-img card__img jslghtbx-thmb" alt="Battleship">
+                  </noscript>
+                </a>
+              
+  					</header>
+
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Battleship</h4>
+              
+                <div class="year">September - October 2014</div>
+              
+  						<div class="card__description">
+  							<p>
+  								Battleship on Rails is my first big project I have done on my own.
+It is a browser version of the well-known game that I managed to build up using Ruby on Rails and JavaScript
+
+  							</p>
+  						</div>
+  					</div>
+
+  					<footer class="card__footer">
+  						<div class="tags">
+  							<i class="icon fas fa-tag"></i>
+  							<span class="tags__item tags__label">Tags:</span>
+                
+                  <span class="tags__item tags__hashtag">Ruby on Rails</span>
+                
+                  <span class="tags__item tags__hashtag">JavaScript</span>
+                
+                  <span class="tags__item tags__hashtag">RSpec</span>
+                
+                  <span class="tags__item tags__hashtag">jQuery</span>
+                
+                  <span class="tags__item tags__hashtag">Capybara</span>
+                
+                  <span class="tags__item tags__hashtag">PostgreSQL</span>
+                
+  						</div>
+
+              
+                <a href="https://sbattle.herokuapp.com" rel="noreferrer" target="_blank" class="link-flat">Website</a>
+              
+  					</footer>
+  				</article>
+        
+			</div>
+		</div>
+	</div>
+</section>
+
+            <section data-nav="services" class="tabs-infoblock services">
+	<div class="tabs-infoblock__inner">
+		<h2 class="title main-title"><span class="main-title__label">Services</span></h2>
+    <h4 class="subtitle">List of things I can do to help your business grow</h4>
+		
+		<div class="content__section">
+			<div class="cards">
+				<article class="card card_bg-yes">
+					<header class="card__iconbox">
+						<i class="icon icon_large card__icon fas fa-server"></i>
+					</header>
+					<div class="card__content">
+						<h3 class="title title_small card__title">Web Development</h3>
+						<div class="card__description">
+							<p>
+                I'll turn your business idea into a web application. Either you may delegate me the responsibility for the whole development process, or I can join your developers' team and help with project delivery.
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="card card_bg-yes">
+					<header class="card__iconbox">
+						<i class="icon icon_large card__icon far fa-eye"></i>
+					</header>
+					<div class="card__content">
+						<h4 class="title title_small card__title">Code Review</h4>
+						<div class="card__description">
+							<p>
+                Daily regular or upon request code review to help to improve code quality, get a second opinion on complicated problems, share knowledge of best practices and design patterns.
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="card card_bg-yes">
+					<header class="card__iconbox">
+						<i class="icon icon_large card__icon fas fa-shield-alt"></i>
+					</header>
+					<div class="card__content">
+						<h4 class="title title_small card__title">Security Audit</h4>
+						<div class="card__description">
+							<p>
+								I will analyze an application code and deliver a detailed report of security vulnerabilities found in your application and instructions on how to fix them.
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="card card_bg-yes">
+					<header class="card__iconbox">
+						<i class="icon icon_large card__icon fas fa-tachometer-alt"></i>
+					</header>
+					<div class="card__content">
+						<h4 class="title title_small card__title">Perfomance Audit</h4>
+						<div class="card__description">
+							<p>
+								I will analyze an application code, run benchmarks and deliver a list of possible performance optimizations and instructions on how to implement them.
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="card card_bg-yes">
+					<header class="card__iconbox">
+						<i class="icon icon_large card__icon fas fa-truck-moving"></i>
+					</header>
+					<div class="card__content">
+						<h4 class="title title_small card__title">Infrastructure Setup or Migration</h4>
+						<div class="card__description">
+							<p>
+								Servers setup or migration from any cloud to any cloud: Heroku, Digital Ocean, AWS, Google Cloud, etc.
+							</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+            <section data-nav="recommendations" class="tabs-infoblock services">
+	<div class="tabs-infoblock__inner">
+		<h2 class="title main-title"><span class="main-title__label">Recommendations</span></h2>
+		<div class="content__section">
+			<div class="content__section cards">
+        
+          <article class="card card_bg-yes">
+  					<header class="card__iconbox">
+  						<img data-lazyload="/images/reviews/sebastian_broways.jpg" class="card__avatar" alt="ava">
+
+              &lt;<noscript>
+                <img src="/images/reviews/sebastian_broways.jpg" class="card__avatar" alt="ava">
+              </noscript>
+  					</header>
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Sebastian Broways</h4>
+  						<span class="card__caption">Head of Product, Cofounder of Mastermind Manager</span>
+  						<blockquote class="card__description card__blockquote">
+  							<i class="icon card__quote card__quote-left fas fa-quote-left"></i>
+  							<p>
+  								Slava has been one of the most excellent individuals with which I&#39;ve had the opportunity to work. Not only is he a competent developer, what makes Slava so great to work with is all the other intangibles. His willingness to jump on any project. His thoughtfulness about what would make the product better and business successful. He&#39;s both a capable leader and developer. Whatever project you bring him in on, he will make you feel like he&#39;s a partner. He has a great attitude and I hope we will continue to work together for years to come. If you have the opportunity to work with him, you should jump on it.
+
+  							</p>
+  							<i class="icon card__quote card__quote-right fas fa-quote-right"></i>
+  						</blockquote>
+  					</div>
+  				</article>
+        
+          <article class="card card_bg-yes">
+  					<header class="card__iconbox">
+  						<img data-lazyload="/images/reviews/lilia.jpg" class="card__avatar" alt="ava">
+
+              &lt;<noscript>
+                <img src="/images/reviews/lilia.jpg" class="card__avatar" alt="ava">
+              </noscript>
+  					</header>
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Liliya Sabitova</h4>
+  						<span class="card__caption">Senior Product Manager at Aggregion Ltd.</span>
+  						<blockquote class="card__description card__blockquote">
+  							<i class="icon card__quote card__quote-left fas fa-quote-left"></i>
+  							<p>
+  								Slava is a very experienced, knowledgeable and responsible professional to work with. His broad expertise allows him to ramp up with new projects very quickly. What I especially liked about working with him is that he always strives to do things the right way - code quality, stability and test coverage are something that he keeps a close eye at, thus our clients with technical background had the most positive feedback regarding his work. All in all, Slava proved to be a great team member as well as a team lead - he was leading the development in quite a few projects that we had within the company. I’d highly recommend Slava as a very skilful developer.
+
+  							</p>
+  							<i class="icon card__quote card__quote-right fas fa-quote-right"></i>
+  						</blockquote>
+  					</div>
+  				</article>
+        
+          <article class="card card_bg-yes">
+  					<header class="card__iconbox">
+  						<img data-lazyload="/images/reviews/Bryan.jpg" class="card__avatar" alt="ava">
+
+              &lt;<noscript>
+                <img src="/images/reviews/Bryan.jpg" class="card__avatar" alt="ava">
+              </noscript>
+  					</header>
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Bryan Woods</h4>
+  						<span class="card__caption">Rhino Labs, Co-Founder &amp; CTO</span>
+  						<blockquote class="card__description card__blockquote">
+  							<i class="icon card__quote card__quote-left fas fa-quote-left"></i>
+  							<p>
+  								Working with Slava was an absolute pleasure - he&#39;s a skilled expert and has been essential to the development of our business.
+
+  							</p>
+  							<i class="icon card__quote card__quote-right fas fa-quote-right"></i>
+  						</blockquote>
+  					</div>
+  				</article>
+        
+          <article class="card card_bg-yes">
+  					<header class="card__iconbox">
+  						<img data-lazyload="/images/reviews/Murat_Alpman.jpg" class="card__avatar" alt="ava">
+
+              &lt;<noscript>
+                <img src="/images/reviews/Murat_Alpman.jpg" class="card__avatar" alt="ava">
+              </noscript>
+  					</header>
+  					<div class="card__content">
+  						<h4 class="title title_small card__title">Murat Alpman</h4>
+  						<span class="card__caption">Entrepreneur, Innovator, Geek</span>
+  						<blockquote class="card__description card__blockquote">
+  							<i class="icon card__quote card__quote-left fas fa-quote-left"></i>
+  							<p>
+  								Slava is one of the best programmers I have ever met if not the best. I highly recommend him.
+
+  							</p>
+  							<i class="icon card__quote card__quote-right fas fa-quote-right"></i>
+  						</blockquote>
+  					</div>
+  				</article>
+        
+			</div>
+		</div>
+	</div>
+</section>
+
+            <section data-nav="contacts" class="tabs-infoblock contacts js-contacts">
+	<div class="tabs-infoblock__inner">
+		<h2 class="title main-title"><span class="main-title__label">Contacts</span></h2>
+		<div class="content__section">
+			<div class="iconboxs">
+				<div class="iconbox">
+					<i class="icon icon_middle iconbox__icon fas fa-envelope-square"></i>
+					<div class="iconbox__info">
+						<span class="iconbox__label iconbox__name">E-mail</span>
+						<span class="iconbox__label">
+              <a target="_blank" href="mailto:&#115;&#108;&#097;&#118;&#097;&#064;&#115;&#107;&#100;&#101;&#118;&#046;&#105;&#110;&#102;&#111;">
+                &#115;&#108;&#097;&#118;&#097;&#064;&#115;&#107;&#100;&#101;&#118;&#046;&#105;&#110;&#102;&#111;
+              </a>
+            </span>
+					</div>
+				</div>
+				
+				<div class="iconbox">
+					<i class="icon icon_middle iconbox__icon fab fa-telegram"></i>
+					<div class="iconbox__info">
+						<span class="iconbox__label iconbox__name">Telegram</span>
+						<span class="iconbox__label"><a href="https://t.me/primazp" target="_blank" rel="noreferrer">primazp</a></span>
+					</div>
+				</div>
+				<div class="iconbox">
+					<i class="icon icon_middle iconbox__icon fab fa-skype"></i>
+					<div class="iconbox__info">
+						<span class="iconbox__label iconbox__name">Skype</span>
+						<span class="iconbox__label">primazp</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content__section">
+			<h3 class="title title_middle">
+				<i class="icon icon_small main-icon fas fa-address-book"></i>
+				<span class="title__label">Contact form</span>
+			</h3>
+			<form id="contact-form" class="form" onsubmit="return contactForm.submit();">
+        <input type="hidden" id="recaptcha_token" name="recaptcha_token">
+        <input type="hidden" name="action" value="validate_captcha">
+        <input type="hidden" name="_gotyou" value="">
+				<div class="form__inner">
+					<div class="form__group form__column">
+						<input id="contact-form-name" type="text" class="form__element field" name="username" placeholder="Your name" pattern="^\S[а-яА-ЯёЁa-zA-Z\s]+\S" required>
+						<i class="icon form__icon fas fa-user"></i>
+						<span class="form__decor-line"></span>
+					</div>
+					<div class="form__group form__column">
+						<input id="contact-form-contact" type="email" class="form__element field" name="usermail" placeholder="Your email" required>
+						<i class="icon form__icon fas fa-envelope"></i>
+						<span class="form__decor-line"></span>
+					</div>
+				</div>
+				<div class="form__group">
+					<textarea id="contact-form-message" class="form__element field textarea" name="msg" placeholder="Your message" required></textarea>
+					<i class="icon form__icon fas fa-comments"></i>
+					<span class="form__decor-line"></span>
+				</div>
+				<div class="form__button-box">
+          <img src="https://slavakisel.github.io/images/loading.gif" id="contact-form-loader" class="hidden" />
+          <div id="contact-form-success" class="hidden">
+            Thanks! Message has been sent.
+          </div>
+					<button class="button" type="submit" id="contact-form-submit">Send</button>
+				</div>
+			</form>
+			<div class="social contacts__social">
+				
+				<a href="https://github.com/slavakisel" target="_blank" rel="noreferrer" class="social__icon fab fa-github"><span class="social__name">GitHub</span></a>
+				<a href="https://www.linkedin.com/in/kiselv/" target="_blank" rel="noreferrer" class="social__icon fab fa-linkedin"><span class="social__name">LinkedIn</span></a>
+        <a href="https://stackoverflow.com/users/7362128/slava-k" rel="noreferrer" target="_blank" class="social__icon fab fa-stack-overflow">
+          <span class="social__name">StackOverflow</span>
+        </a>
+        <a href="https://m.do.co/c/ef060ba270fb" target="_blank" rel="noreferrer" class="social__icon fab fa-digital-ocean"><span class="social__name">Digital Ocean</span></a>
+        <a href="https://ynab.com/referral/?ref=WNaNuF6bLqPo-lN8&utm_source=customer_referral" target="_blank" rel="noreferrer" class="social__icon ynab-icon">
+          <img src="https://slavakisel.github.io/images/ynab.png" alt="You Need A Budget" />
+        </a>
+        <a href="https://db.tt/5CtQzoKWLU" target="_blank" rel="noreferrer" class="social__icon fab fa-dropbox"><span class="social__name">Dropbox</span></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+            <div class="maker-ad-wrapper">
+              <iframe style="border:0;width:320px;height:144px;" src="https://makerads.xyz/ad"></iframe>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+	<span>&copy;<span id="current_year"></span> All rights reserved</span>
+</footer>
+
+<script>
+  !function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script async src="https://slavakisel.github.iojs/bundle.js"></script>
+
+
+<script async src="https://slavakisel.github.iojs/ie10-viewport-bug-workaround.js"></script>
+
+<script async src="https://slavakisel.github.iojs/lightbox.min.js"></script>
+
+
+      </div>
+    </div>
+    <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
+    <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+  </body>
+</html>
