@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slava Kysil Consulting</title>
-    <link>https://slavakisel.github.io/</link>
+    <link>https://skdev.info/</link>
     <description>Recent content on Slava Kysil Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
     
-	<atom:link href="https://slavakisel.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://skdev.info/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Projects</title>
-      <link>https://slavakisel.github.io/projects/</link>
+      <link>https://skdev.info/projects/</link>
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
-      <guid>https://slavakisel.github.io/projects/</guid>
+      <guid>https://skdev.info/projects/</guid>
       <description></description>
     </item>
     
